@@ -14,6 +14,7 @@ public class Main {
 
         System.out.println(data);
         System.out.println(find(5));
+        System.out.println(findAlle(5));
 
     }
 
@@ -24,6 +25,18 @@ public class Main {
             if (i == x) {
                 result = true;
                 break;
+            }
+        }
+
+        return result;
+    }
+
+    static int findAlle(int x) {
+        int result = 0;
+
+        for (int i : data) {
+            if (i == x) {
+                result++;
             }
         }
 
